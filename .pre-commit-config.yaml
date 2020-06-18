@@ -4,4 +4,4 @@ repos:
   hooks:
     - id: prettier
       files: 'src/*'
-      args: [./src, --write]
+      args: [./src, --check]
