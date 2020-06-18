@@ -3,4 +3,5 @@ repos:
   rev: "2.0.5" 
   hooks:
     - id: prettier
+      files: 'src/*'
       args: [./src, --write]
