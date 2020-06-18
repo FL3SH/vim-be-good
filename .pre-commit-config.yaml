@@ -1,6 +1,6 @@
 repos:
--   repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v7.0.0
-    hooks:
-    -   id: eslint
-        args: [--fix]
+- repo: https://github.com/prettier/prettier
+  rev: "2.0.5" 
+  hooks:
+    - id: prettier
+      args: [./src, --write]
