@@ -1,4 +1,15 @@
+repos:
 - repo: https://github.com/prettier/prettier
   rev: "2.0.5" # Use the sha or tag you want to point at
   hooks:
     - id: prettier
+- repo: git://github.com/pre-commit/mirrors-eslint
+  sha: v4.10.0
+  hooks:
+  -   id: eslint
+      args: [--fix]
+      additional_dependencies:
+      - eslint-config-google
+      - eslint-loader
+      - eslint-plugin-react
+      - babel-eslint
